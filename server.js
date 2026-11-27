@@ -27,7 +27,6 @@ app.get('/contato', (req, res) => {
   );
 });
 
-// Middleware final: executa somente se nenhuma rota acima respondeu
 app.use((req, res) => {
   res.status(404).send('Página não encontrada.');
 });
